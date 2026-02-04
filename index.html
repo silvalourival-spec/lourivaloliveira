@@ -1,0 +1,2383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Lourival Oliveira - Advogado | Salvador e Região</title>
+    <meta name="description" content="Dr. Lourival Oliveira - Advogado especializado em Direito Previdenciário com quase 10 anos de experiência em Salvador. OAB/BA 61.507">
+    <meta name="keywords" content="advogado Salvador, direito previdenciário, advogado trabalhista, direito civil, direito criminal, direito consumidor, advogado Pituaçu">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #0a192f; /* Azul marinho escuro - profissionalismo */
+            --primary-dark: #051123;
+            --primary-light: #1a2f4f;
+            --secondary: #c9a959; /* Dourado - excelência */
+            --secondary-dark: #b8941f;
+            --accent: #8b7355; /* Bronze - elegância */
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --dark: #121212;
+            --light-bg: #f5f7fa;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
+            --shadow-dark: 0 10px 30px rgba(0, 0, 0, 0.2);
+            --radius: 8px;
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+            --border-gradient: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: var(--dark);
+            background-color: #fff;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+
+        h1 {
+            font-size: 3.8rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-size: 3rem;
+            position: relative;
+            padding-bottom: 1.5rem;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: var(--border-gradient);
+            border-radius: 2px;
+        }
+
+       .section-header h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        h3 {
+            font-size: 1.9rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--gray);
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
+       .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+       .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 36px;
+            background: var(--border-gradient);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--radius);
+            font-weight: 600;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 1.05rem;
+            gap: 10px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            letter-spacing: 0.5px;
+        }
+
+       .btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: 0.6s;
+        }
+
+       .btn:hover:before {
+            left: 100%;
+        }
+
+       .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-dark);
+        }
+
+       .btn-secondary {
+            background: var(--primary);
+            color: white;
+        }
+
+       .btn-secondary:hover {
+            background: var(--primary-light);
+        }
+
+       .btn-outline {
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+            box-shadow: none;
+        }
+
+       .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+       .section-header {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+       .section-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        header.scrolled {
+            padding: 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+       .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+       .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px; /* Espaço entre o ícone e o texto */
+            text-decoration: none;
+        }
+        
+        /* LOGO ESTRUTURA NOVA */
+        .logo-icon-img {
+            height: 65px; /* Altura do ícone */
+            width: auto;
+            transition: var(--transition);
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .logo-name {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 1.6rem; /* Tamanho do nome do advogado */
+            color: var(--primary);
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+        }
+        
+        .logo-tagline {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            color: var(--accent); /* Cor bronze/dourado */
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Efeito ao rolar */
+        header.scrolled .logo-icon-img {
+            height: 50px; /* Ícone diminui um pouco */
+        }
+        
+        header.scrolled .logo-name {
+            font-size: 1.4rem; /* Texto diminui um pouco */
+        }
+
+       .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+       .nav-menu li a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: var(--transition);
+            position: relative;
+            padding: 5px 0;
+        }
+
+       .nav-menu li a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: var(--border-gradient);
+            border-radius: 3px;
+            transition: var(--transition);
+        }
+
+       .nav-menu li a:hover {
+            color: var(--secondary);
+        }
+
+       .nav-menu li a:hover:after {
+            width: 100%;
+        }
+
+       .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            color: var(--primary);
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        /* Banner Slider */
+       .banner-section {
+            margin-top: 100px;
+            padding: 0;
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+       .banner-slider {
+            width: 100%;
+            max-width: 100%;
+            position: relative;
+        }
+
+       .banner-slides {
+            width: 100%;
+            height: 700px;
+            position: relative;
+        }
+
+       .banner-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            display: flex;
+            align-items: center;
+            padding: 0 100px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+       .banner-slide.active {
+            opacity: 1;
+        }
+
+        /* IMAGENS DO BANNER */
+       .banner-slide:nth-child(1) {
+            background-image: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.8)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+        }
+
+       .banner-slide:nth-child(2) {
+            background-image: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.8)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80');
+        }
+
+       .banner-slide:nth-child(3) {
+            background-image: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.8)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+        }
+
+       .banner-slide:nth-child(4) {
+            background-image: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.8)), url('https://images.unsplash.com/photo-1589994965851-a8f479c573a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+        }
+
+       .slide-content {
+            max-width: 750px;
+            color: white;
+            animation: fadeInUp 1s ease;
+        }
+
+       .slide-content h1 {
+            color: white;
+            font-size: 4rem;
+            margin-bottom: 25px;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+       .slide-content p {
+            font-size: 1.4rem;
+            color: rgba(255, 255, 255, 0.95);
+            margin-bottom: 35px;
+        }
+
+       .banner-nav {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+            z-index: 10;
+        }
+
+       .banner-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+       .banner-dot.active {
+            background-color: white;
+            transform: scale(1.2);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+
+       .banner-prev,.banner-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.15);
+            color: white;
+            border: none;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: var(--transition);
+            z-index: 10;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+       .banner-prev:hover,.banner-next:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+       .banner-prev {
+            left: 40px;
+        }
+
+       .banner-next {
+            right: 40px;
+        }
+
+        /* CTA Section */
+       .cta-section {
+            background-color: var(--light-bg);
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+       .cta-section:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=5');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.05;
+            z-index: 0;
+        }
+
+       .cta-container {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+       .cta-container h2 {
+            margin-bottom: 30px;
+        }
+
+       .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        /* Features */
+       .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+       .feature-card {
+            background-color: white;
+            border-radius: var(--radius);
+            padding: 50px 35px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            border-top: 5px solid transparent;
+            background: linear-gradient(white, white) padding-box, var(--border-gradient) border-box;
+            border: 1px solid transparent;
+        }
+
+       .feature-card:hover {
+            transform: translateY(-15px);
+            box-shadow: var(--shadow-lg);
+        }
+
+       .feature-icon {
+            width: 90px;
+            height: 90px;
+            background: var(--border-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            margin: 0 auto 30px;
+            box-shadow: 0 10px 20px rgba(201, 169, 89, 0.3);
+        }
+
+        /* Sobre */
+       .sobre-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+       .sobre-img {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            height: 550px;
+            background-image: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+       .sobre-text h2 {
+            margin-bottom: 30px;
+        }
+
+       .sobre-list {
+            list-style: none;
+            margin-top: 25px;
+        }
+
+       .sobre-list li {
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+        }
+
+       .sobre-list i {
+            color: var(--secondary);
+            margin-right: 15px;
+            font-size: 1.3rem;
+        }
+
+        /* Areas of Practice */
+       .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+       .area-card {
+            background-color: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+       .area-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+       .area-image {
+            height: 220px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+       .area-image:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.4));
+        }
+        
+       .area-card:nth-child(1) .area-image {
+            background-image: url('https://images.unsplash.com/photo-1589216532372-1c2a367900d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80');
+        }
+
+       .area-card:nth-child(2) .area-image {
+            background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=1469&q=80');
+        }
+
+       .area-card:nth-child(3) .area-image {
+            background-image: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+        }
+        
+       .area-card:nth-child(4) .area-image {
+            background-image: url('https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+        }
+        
+       .area-card:nth-child(5) .area-image {
+            background-image: url('https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+        }
+        
+       .area-card:nth-child(6) .area-image {
+            background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+        }
+
+       .area-content {
+            padding: 35px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+       .area-content h3 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+       .area-icon {
+            color: var(--secondary);
+            font-size: 1.5rem;
+        }
+
+       .area-list {
+            list-style: none;
+            margin-top: 20px;
+            flex-grow: 1;
+        }
+
+       .area-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+       .area-list li:last-child {
+            border-bottom: none;
+        }
+
+       .area-list i {
+            color: var(--secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Articles */
+       .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+       .article-card {
+            background-color: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+       .article-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+       .article-image {
+            height: 240px;
+            background-color: var(--light-bg);
+            background-size: cover;
+            background-position: center;
+        }
+
+       .article-card:nth-child(1) .article-image {
+            background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+        }
+
+       .article-card:nth-child(2) .article-image {
+            background-image: url('https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+        }
+
+       .article-card:nth-child(3) .article-image {
+            background-image: url('https://images.unsplash.com/photo-1593115057322-e94b77572f20?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80');
+        }
+        
+       .article-card:nth-child(4) .article-image {
+            background-image: url('https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+        }
+
+       .article-content {
+            padding: 35px;
+        }
+
+       .article-meta {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+
+       .article-tag {
+            color: var(--secondary);
+            font-weight: 600;
+        }
+
+       .article-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+       .article-link:hover {
+            color: var(--secondary);
+            gap: 15px;
+        }
+
+        /* Article Page */
+       .article-page {
+            padding: 120px 0 80px;
+            animation: fadeIn 0.5s ease;
+        }
+
+       .article-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+       .article-author {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+       .article-body {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.9;
+        }
+
+       .article-body h2 {
+            font-size: 2.2rem;
+            margin-top: 50px;
+            margin-bottom: 25px;
+        }
+
+       .article-body h3 {
+            font-size: 1.6rem;
+            margin-top: 35px;
+            margin-bottom: 20px;
+        }
+
+       .article-quote {
+            border-left: 5px solid var(--secondary);
+            padding: 30px;
+            background-color: var(--light-bg);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            margin: 40px 0;
+            color: var(--primary);
+        }
+
+       .back-to-articles {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 50px;
+            padding: 15px 30px;
+            background-color: var(--light-bg);
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: var(--radius);
+            transition: var(--transition);
+        }
+
+       .back-to-articles:hover {
+            background-color: var(--primary);
+            color: white;
+            gap: 15px;
+        }
+        
+       .article-list {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        
+       .article-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+       .article-list li:before {
+            content: '•';
+            color: var(--secondary);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* Calculators */
+       .calculator-section {
+            background-color: var(--light-bg);
+        }
+
+       .calculator-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+       .calculator-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+       .calculator-tab {
+            padding: 18px 35px;
+            background-color: white;
+            border: 2px solid transparent;
+            border-radius: var(--radius);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1.1rem;
+            background: linear-gradient(white, white) padding-box, var(--border-gradient) border-box;
+        }
+
+       .calculator-tab.active {
+            background: var(--border-gradient);
+            color: white;
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+       .calculator-content {
+            background-color: white;
+            border-radius: var(--radius);
+            padding: 50px;
+            box-shadow: var(--shadow);
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMCwgMCwgMCwgMC4wNSkiLz48L3N2Zz4=');
+        }
+
+       .calculator {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+       .calculator.active {
+            display: block;
+        }
+
+       .form-group {
+            margin-bottom: 25px;
+        }
+
+       .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+       .form-control {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: var(--radius);
+            font-size: 1rem;
+            transition: var(--transition);
+            font-family: 'Inter', sans-serif;
+        }
+
+       .form-control:focus {
+            outline: none;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 4px rgba(201, 169, 89, 0.15);
+        }
+
+       .calc-result {
+            margin-top: 35px;
+            padding: 30px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: var(--radius);
+            text-align: center;
+            display: none;
+            animation: slideUp 0.5s ease;
+        }
+
+       .calc-result h4 {
+            color: var(--secondary);
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+       .calc-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Contact Section */
+       .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 60px;
+        }
+
+       .contact-info {
+            padding-right: 30px;
+        }
+
+       .contact-item {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+       .contact-icon {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(201, 169, 89, 0.15);
+            color: var(--secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+       .contact-form {
+            background-color: white;
+            padding: 50px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            border-top: 5px solid var(--secondary);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: white;
+            padding: 80px 0 30px;
+            position: relative;
+        }
+
+       .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+       .footer-col h3 {
+            color: white;
+            font-size: 1.6rem;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+       .footer-col h3:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--secondary);
+        }
+
+       .footer-links {
+            list-style: none;
+        }
+
+       .footer-links li {
+            margin-bottom: 18px;
+        }
+
+       .footer-links a {
+            color: rgba(255, 255, 255, 0.85);
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+       .footer-links a:hover {
+            color: var(--secondary);
+            transform: translateX(5px);
+        }
+
+       .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.95rem;
+        }
+
+       .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            box-shadow: var(--shadow-lg);
+            z-index: 1000;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+       .whatsapp-float:hover {
+            transform: scale(1.1) rotate(10deg);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+       .fade-in {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+           .banner-slide {
+                padding: 0 60px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            h1 { font-size: 3rem; }
+            h2 { font-size: 2.5rem; }
+           .header-container { padding: 15px 0; }
+           .nav-menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                height: 100vh;
+                background-color: white;
+                flex-direction: column;
+                justify-content: center;
+                padding: 40px;
+                box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+                transition: 0.4s ease;
+                z-index: 1000;
+            }
+           .nav-menu.active { right: 0; }
+           .mobile-menu-btn { display: block; }
+           .nav-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.5);
+                z-index: 999;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.4s;
+            }
+           .nav-overlay.active { opacity: 1; visibility: visible; }
+           .banner-slides { height: 600px; }
+           .banner-slide { padding: 0 40px; }
+           .features-grid { grid-template-columns: repeat(2, 1fr); }
+           .areas-grid { grid-template-columns: repeat(2, 1fr); }
+           .contact-grid { grid-template-columns: 1fr; }
+           .footer-grid { grid-template-columns: 1fr 1fr; }
+           .sobre-container {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+           .sobre-img {
+                height: 400px;
+                order: -1;
+                max-width: 100%;
+            }
+           .calculator-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+           .calculator-tab {
+                width: 100%;
+                max-width: 320px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+           .banner-slides { height: 550px; }
+           .banner-slide { 
+                padding: 0 30px; 
+                align-items: flex-start;
+                padding-top: 100px;
+            }
+           .slide-content h1 { 
+                font-size: 2.5rem; 
+                margin-bottom: 15px;
+            }
+           .slide-content p { 
+                font-size: 1.1rem; 
+                margin-bottom: 25px;
+            }
+            
+           .banner-prev, .banner-next { 
+                width: 50px; 
+                height: 50px; 
+                font-size: 1.2rem; 
+                top: 60%;
+            }
+           .banner-prev { left: 10px; }
+           .banner-next { right: 10px; }
+           .areas-grid, .articles-grid, .features-grid { grid-template-columns: 1fr; }
+           .footer-grid { grid-template-columns: 1fr; }
+           .contact-form {
+                padding: 30px;
+            }
+           .calculator-content {
+                padding: 30px;
+            }
+           .sobre-img {
+                height: 350px;
+            }
+           .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+           .cta-buttons .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            /* Logo Responsiva */
+            .logo-icon-img {
+                height: 50px;
+            }
+            .logo-name {
+                font-size: 1.2rem;
+            }
+            .logo-tagline {
+                font-size: 0.7rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+           .sobre-img {
+                height: 280px;
+            }
+           .credenciais-grid {
+                grid-template-columns: 1fr !important;
+                gap: 15px !important;
+            }
+           .banner-slides {
+                height: 500px;
+            }
+           .banner-slide {
+                padding: 0 20px;
+                padding-top: 80px;
+            }
+           .slide-content h1 {
+                font-size: 2rem;
+            }
+           .slide-content p {
+                font-size: 1rem;
+            }
+           .section-header p {
+                font-size: 1rem;
+            }
+           .contact-item {
+                flex-direction: column;
+                gap: 10px;
+            }
+           .contact-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2rem;
+            }
+           .banner-prev, .banner-next {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+                top: 65%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <header id="header">
+        <div class="container header-container">
+            <!-- LOGO MODIFICADA: Ícone + Texto HTML -->
+            <a href="#" class="logo">
+                <img src="logomrca_sem_advogado.jpg" alt="Logo Icon" class="logo-icon-img">
+                <div class="logo-text">
+                    <span class="logo-name">Dr. Lourival Oliveira</span>
+                    <span class="logo-tagline">Advocacia Especializada</span>
+                </div>
+            </a>
+            
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#areas">Áreas</a></li>
+                    <li><a href="#artigos">Artigos</a></li>
+                    <li><a href="#calculadoras">Calculadoras</a></li>
+                    <li><a href="#contato" class="btn btn-primary" style="padding: 10px 25px; color: white;">Contato</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section id="home" class="banner-section">
+            <div class="banner-slider">
+                <div class="banner-slides">
+                    <div class="banner-slide active">
+                        <div class="slide-content">
+                            <h1>Especialista em Direito Previdenciário</h1>
+                            <p>Garanta seus direitos com quem entende. Aposentadorias, benefícios e revisões com atendimento personalizado e eficiente.</p>
+                            <div class="cta-buttons">
+                                <a href="#contato" class="btn">Agendar Consulta</a>
+                                <a href="#calculadoras" class="btn btn-outline simular-beneficio" style="color: white; border-color: white;">Simular Benefício</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-slide">
+                        <div class="slide-content">
+                            <h1>Defesa dos Direitos do Trabalhador</h1>
+                            <p>Lutamos por verbas rescisórias, horas extras, reconhecimento de vínculo e indenizações por acidentes de trabalho.</p>
+                            <a href="#contato" class="btn">Fale Conosco</a>
+                        </div>
+                    </div>
+                    <div class="banner-slide">
+                        <div class="slide-content">
+                            <h1>Solução Jurídica Completa</h1>
+                            <p>Atuação em Direito Civil, Família e Consumidor. Segurança jurídica para você e seu patrimônio.</p>
+                            <a href="#sobre" class="btn btn-secondary">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="banner-slide">
+                        <div class="slide-content">
+                            <h1>Resultado Jurídico Completo</h1>
+                            <p>95% de taxa de sucesso em processos. Atuação em Direito Civil, Família e Consumidor. Segurança jurídica para você e seu patrimônio.</p>
+                            <div class="cta-buttons">
+                                <a href="#sobre" class="btn">Saiba Mais</a>
+                                <a href="#areas" class="btn btn-outline" style="color: white; border-color: white;">Conheça Nossas Áreas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="banner-prev" id="bannerPrev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="banner-next" id="bannerNext">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <div class="banner-nav">
+                    <span class="banner-dot active" data-slide="0"></span>
+                    <span class="banner-dot" data-slide="1"></span>
+                    <span class="banner-dot" data-slide="2"></span>
+                    <span class="banner-dot" data-slide="3"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section" style="padding-bottom: 50px; margin-top: -80px; position: relative; z-index: 10;">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h3>Especialização Previdenciária</h3>
+                        <p>Foco em Direito Previdenciário com expertise em aposentadorias, pensões, auxílio-doença, LOAS e revisões de benefícios.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Transparência e Ética</h3>
+                        <p>Comunicação clara sobre todas as etapas do processo, honorários justos e estratégias adotadas em cada caso com total transparência.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Sobre o Dr. Lourival Oliveira</h2>
+                    <p>Dedicação exclusiva e atendimento humanizado para garantir o melhor resultado para o seu caso.</p>
+                </div>
+                <div class="sobre-container">
+                    <div class="sobre-img"></div>
+                    <div class="sobre-text">
+                        <h3>Excelência Jurídica em Salvador</h3>
+                        <p>Com quase uma década de atuação, o escritório do Dr. Lourival Oliveira se consolidou como referência em Direito Previdenciário e Diferentes Áreas do Direito em Salvador e região.</p>
+                        <p>Nossa missão é proporcionar justiça social através de um atendimento técnico, ético e, acima de tudo, humano. Entendemos que por trás de cada processo existe uma vida, uma história e uma necessidade.</p>
+                        
+                        <div class="credenciais-grid" style="margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div class="credencial-item" style="text-align: left; padding: 0; box-shadow: none; border: none;">
+                                <h4 style="color: var(--secondary); font-size: 2.5rem; margin-bottom: 0;">+10</h4>
+                                <p>Anos de Experiência</p>
+                            </div>
+                            <div class="credencial-item" style="text-align: left; padding: 0; box-shadow: none; border: none;">
+                                <h4 style="color: var(--secondary); font-size: 2.5rem; margin-bottom: 0;">+2000</h4>
+                                <p>Casos Resolvidos</p>
+                            </div>
+                        </div>
+                        
+                        <ul class="sobre-list">
+                            <li><i class="fas fa-check-circle"></i> Especialista em Direito Previdenciário</li>
+                            <li><i class="fas fa-check-circle"></i> Atendimento personalizado</li>
+                            <li><i class="fas fa-check-circle"></i> Foco total em resultados</li>
+                        </ul>
+                        
+                        <a href="#contato" class="btn" style="margin-top: 40px;">Agendar Atendimento</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="areas" style="background-color: var(--light-bg);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Áreas de Atuação</h2>
+                    <p>Soluções jurídicas abrangentes para pessoas físicas e empresas.</p>
+                </div>
+                
+                <div class="areas-grid">
+                    <div class="area-card fade-in">
+                        <div class="area-image"></div>
+                        <div class="area-content">
+                            <h3><i class="fas fa-hands-helping area-icon"></i> Direito Previdenciário</h3>
+                            <p>Especialistas em garantir o melhor benefício para sua aposentadoria.</p>
+                            <ul class="area-list">
+                                <li><i class="fas fa-check"></i> Aposentadorias (Idade, Tempo)</li>
+                                <li><i class="fas fa-check"></i> Auxílio-Doença e Acidente</li>
+                                <li><i class="fas fa-check"></i> BPC/LOAS para idosos/deficientes</li>
+                                <li><i class="fas fa-check"></i> Pensão por Morte</li>
+                                <li><i class="fas fa-check"></i> Planejamento Previdenciário</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="area-card fade-in">
+                        <div class="area-image"></div>
+                        <div class="area-content">
+                            <h3><i class="fas fa-briefcase area-icon"></i> Direito Trabalhista</h3>
+                            <p>Defesa intransigente dos direitos dos trabalhadores e acidentes de trabalho.</p>
+                            <ul class="area-list">
+                                <li><i class="fas fa-check"></i> Reclamações trabalhistas</li>
+                                <li><i class="fas fa-check"></i> Rescisões e verbas rescisórias</li>
+                                <li><i class="fas fa-check"></i> Horas extras e adicional noturno</li>
+                                <li><i class="fas fa-check"></i> Assédio moral e sexual</li>
+                                <li><i class="fas fa-check"></i> Doenças ocupacionais</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="area-card fade-in">
+                        <div class="area-image"></div>
+                        <div class="area-content">
+                            <h3><i class="fas fa-home area-icon"></i> Direito Civil</h3>
+                            <p>Atuação em questões contratuais, responsabilidade civil, indenizações, direito de família, sucessões, inventários e consumidor.</p>
+                            <ul class="area-list">
+                                <li><i class="fas fa-check"></i> Contratos em geral</li>
+                                <li><i class="fas fa-check"></i> Responsabilidade civil</li>
+                                <li><i class="fas fa-check"></i> Direito de família (divórcio, pensão, guarda)</li>
+                                <li><i class="fas fa-check"></i> Inventário e partilha de bens</li>
+                                <li><i class="fas fa-check"></i> Usucapião e direito de propriedade</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="area-card fade-in">
+                        <div class="area-image"></div>
+                        <div class="area-content">
+                            <h3><i class="fas fa-shopping-cart area-icon"></i> Direito do Consumidor</h3>
+                            <p>Proteção dos direitos do consumidor em relações de consumo, produtos defeituosos e práticas abusivas.</p>
+                            <ul class="area-list">
+                                <li><i class="fas fa-check"></i> Vícios de produtos e serviços</li>
+                                <li><i class="fas fa-check"></i> Práticas comerciais abusivas</li>
+                                <li><i class="fas fa-check"></i> Cobranças indevidas</li>
+                                <li><i class="fas fa-check"></i> Responsabilidade civil do fornecedor</li>
+                                <li><i class="fas fa-check"></i> Direito de arrependimento</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="area-card fade-in">
+                        <div class="area-image"></div>
+                        <div class="area-content">
+                            <h3><i class="fas fa-balance-scale area-icon"></i> Direito Criminal</h3>
+                            <p>Defesa em processos criminais, liberdade provisória, habeas corpus e recursos criminais.</p>
+                            <ul class="area-list">
+                                <li><i class="fas fa-check"></i> Defesa em processos criminais</li>
+                                <li><i class="fas fa-check"></i> Habeas corpus e liberdade provisória</li>
+                                <li><i class="fas fa-check"></i> Crimes contra o patrimônio</li>
+                                <li><i class="fas fa-check"></i> Crimes contra a pessoa</li>
+                                <li><i class="fas fa-check"></i> Recursos e revisão criminal</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="area-card fade-in">
+                        <div class="area-image"></div>
+                        <div class="area-content">
+                            <h3><i class="fas fa-laptop-code area-icon"></i> Direito Digital</h3>
+                            <p>Proteção de dados pessoais, crimes cibernéticos, contratos eletrônicos e compliance digital.</p>
+                            <ul class="area-list">
+                                <li><i class="fas fa-check"></i> LGPD - Lei Geral de Proteção de Dados</li>
+                                <li><i class="fas fa-check"></i> Crimes cibernéticos</li>
+                                <li><i class="fas fa-check"></i> Contratos eletrônicos</li>
+                                <li><i class="fas fa-check"></i> Compliance digital</li>
+                                <li><i class="fas fa-check"></i> Direitos autorais na internet</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="artigos">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Artigos e Notícias</h2>
+                    <p>Mantenha-se informado sobre seus direitos com nossos conteúdos exclusivos.</p>
+                </div>
+                
+                <div class="articles-grid">
+                    <div class="article-card fade-in">
+                        <div class="article-image"></div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="article-tag">Previdenciário</span>
+                                <span>15 Jan 2026</span>
+                            </div>
+                            <h3>Nova Reforma da Previdência: O que Mudou para o Trabalhador</h3>
+                            <p>Análise completa sobre as mudanças trazidas pela última reforma previdenciária e como afetam os direitos dos trabalhadores.</p>
+                            <a href="#" class="article-link" onclick="loadArticle('artigo1'); return false;">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-card fade-in">
+                        <div class="article-image"></div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="article-tag">Trabalhista</span>
+                                <span>05 Jan 2026</span>
+                            </div>
+                            <h3>Home Office: Direitos e Obrigações do Trabalhador</h3>
+                            <p>Entenda como funciona a legislação trabalhista para quem trabalha em regime remoto e quais cuidados tomar.</p>
+                            <a href="#" class="article-link" onclick="loadArticle('artigo2'); return false;">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-card fade-in">
+                        <div class="article-image"></div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="article-tag">Civil</span>
+                                <span>22 Jan 2026</span>
+                            </div>
+                            <h3>Inventário Extrajudicial: Rapidez e Economia</h3>
+                            <p>Saiba quando é possível realizar o inventário em cartório, economizando tempo e recursos da família.</p>
+                            <a href="#" class="article-link" onclick="loadArticle('artigo3'); return false;">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                      <div class="article-card fade-in">
+                        <div class="article-image"></div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="article-tag">Consumidor</span>
+                                <span>28 Jan 2026</span>
+                            </div>
+                            <h3>Direito de Arrependimento e Compras Online</h3>
+                            <p>Conheça seus direitos ao fazer compras pela internet e como exercer o direito de arrependimento.</p>
+                            <a href="#" class="article-link" onclick="loadArticle('artigo4'); return false;">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="calculadoras" class="calculator-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Calculadoras Jurídicas</h2>
+                    <p>Simule valores aproximados para ter uma noção dos seus direitos.</p>
+                </div>
+                
+                <div class="calculator-container">
+                    <div class="calculator-tabs">
+                        <button class="calculator-tab active" data-target="beneficio-calc">Benefício Previdenciário</button>
+                        <button class="calculator-tab" data-target="pensao-calc">Pensão Alimentícia</button>
+                        <button class="calculator-tab" data-target="indenizacao-calc">Rescisão Trabalhista</button>
+                    </div>
+                    
+                    <div class="calculator-content">
+                        <div class="calculator active" id="beneficio-calc">
+                            <h3>Estimativa de Benefício Previdenciário</h3>
+                            <p style="font-size: 0.9rem; margin-bottom: 25px;">Esta é uma estimativa baseada nas regras atuais do INSS. O valor final pode variar conforme análise do órgão previdenciário.</p>
+                            <form id="beneficioForm">
+                                <div class="form-group">
+                                    <label for="media-salarios">Média dos 80% maiores salários (R$)</label>
+                                    <input type="number" id="media-salarios" class="form-control" placeholder="Ex: 3000" required>
+                                    <small style="color: var(--gray); font-size: 0.85rem;">Digite a média dos seus 80% maiores salários de contribuição</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tempo-contribuicao">Tempo de Contribuição (anos)</label>
+                                    <input type="number" id="tempo-contribuicao" class="form-control" placeholder="Ex: 30" step="0.5" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tipo-aposentadoria">Tipo de Aposentadoria</label>
+                                    <select id="tipo-aposentadoria" class="form-control">
+                                        <option value="idade">Por Idade</option>
+                                        <option value="tempo">Por Tempo de Contribuição</option>
+                                        <option value="mista">Mista</option>
+                                        <option value="especial">Especial</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="idade">Idade Atual</label>
+                                    <input type="number" id="idade" class="form-control" placeholder="Ex: 60" required>
+                                </div>
+                                <button type="submit" class="btn">Calcular Estimativa</button>
+                            </form>
+                            <div class="calc-result" id="beneficioResult">
+                                <h4>Valor Estimado do Benefício:</h4>
+                                <div class="calc-value" id="beneficioValue">R$ 0,00</div>
+                                <p style="margin-top: 15px; font-size: 0.9rem; color: rgba(255,255,255,0.8);">Corresponde a aproximadamente <span id="percentualBeneficio">0</span>% da média salarial.</p>
+                                <p style="margin-top: 10px; font-size: 0.8rem; color: rgba(255,255,255,0.7);">*Valor estimado com base nas regras atuais. Consulte um especialista para análise detalhada.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="calculator" id="pensao-calc">
+                            <h3>Estimativa de Pensão Alimentícia</h3>
+                            <p style="font-size: 0.9rem; margin-bottom: 25px;">Esta é apenas uma estimativa baseada na jurisprudência comum. O valor final será determinado pelo juiz com base nas necessidades do alimentando e possibilidades do alimentante.</p>
+                            <form id="pensaoForm">
+                                <div class="form-group">
+                                    <label for="renda-alimentante">Renda Líquida do Alimentante (R$)</label>
+                                    <input type="number" id="renda-alimentante" class="form-control" placeholder="Ex: 3000" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="num-filhos">Número de Filhos</label>
+                                    <input type="number" id="num-filhos" class="form-control" placeholder="Ex: 1" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="necessidades">Nível de Necessidades Especiais</label>
+                                    <select id="necessidades" class="form-control">
+                                        <option value="0">Básico (Alimentação, Educação, Saúde Padrão)</option>
+                                        <option value="1">Médio (Tratamentos médicos recorrentes, etc)</option>
+                                        <option value="2">Alto (Necessidades especiais, cuidadores, etc)</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn">Calcular Estimativa</button>
+                            </form>
+                            <div class="calc-result" id="pensaoResult">
+                                <h4>Valor Estimado:</h4>
+                                <div class="calc-value" id="pensaoValue">R$ 0,00</div>
+                                <p style="margin-top: 15px; font-size: 0.9rem; color: rgba(255,255,255,0.8);">Equivalente a aproximadamente <span id="percentualRenda">0</span>% da renda líquida.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="calculator" id="indenizacao-calc">
+                            <h3>Calculadora de Multa FGTS (40%)</h3>
+                            <form id="indenizacaoForm">
+                                <div class="form-group">
+                                    <label for="salario">Último Salário (R$)</label>
+                                    <input type="number" id="salario" class="form-control" placeholder="Ex: 2500" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tempo-servico">Tempo de Serviço (anos)</label>
+                                    <input type="number" id="tempo-servico" class="form-control" placeholder="Ex: 3" step="0.5" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tipo-rescisao">Tipo de Rescisão</label>
+                                    <select id="tipo-rescisao" class="form-control">
+                                        <option value="1">Sem Justa Causa (Iniciativa do Empregador)</option>
+                                        <option value="2">Pedido de Demissão</option>
+                                        <option value="3">Com Justa Causa</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn">Calcular Multa FGTS</button>
+                            </form>
+                            <div class="calc-result" id="multaResult">
+                                <h4>Valor Estimado da Multa (40%):</h4>
+                                <div class="calc-value" id="multaValue">R$ 0,00</div>
+                                <p style="margin-top: 15px; font-size: 0.9rem; color: rgba(255,255,255,0.8);">*Estimativa baseada em depósitos regulares.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Entre em Contato</h2>
+                    <p>Estamos prontos para ouvir sua história e defender seus direitos.</p>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Nosso Escritório</h4>
+                                <p>Rua Gonçalves Cezimbra, 17, Apto 102 - Pituaçu</p>
+                                <p>CEP: 41741-155 - Salvador - BA</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Telefones</h4>
+                                <p>(71) 98130-3910 (WhatsApp)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>silva.lourival@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Horário de Atendimento</h4>
+                                <p><strong>Segunda a Sexta:</strong> 9h às 17h</p>
+                                <p><strong>Sábado:</strong> 9h às 12h (com agendamento)</p>
+                                <p><em>Plantão por telefone para clientes</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form fade-in">
+                        <h3>Envie uma Mensagem</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="contact-nome">Nome Completo</label>
+                                <input type="text" id="contact-nome" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-telefone">Telefone com WhatsApp</label>
+                                <input type="tel" id="contact-telefone" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-mensagem">Como podemos ajudar?</label>
+                                <textarea id="contact-mensagem" class="form-control" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn" style="width: 100%;">Enviar Mensagem via WhatsApp</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="article-content" style="display: none; padding-top: 100px;">
+        </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <!-- LOGO FOOTER -->
+                    <a href="#" class="logo" style="margin-bottom: 20px;">
+                        <img src="logomrca_sem_advogado.jpg" alt="Logo Icon" class="logo-icon-img">
+                        <div class="logo-text">
+                            <span class="logo-name" style="color: white; font-size: 1.4rem;">Dr. Lourival Oliveira</span>
+                            <span class="logo-tagline" style="color: rgba(255,255,255,0.6);">Advocacia Especializada</span>
+                        </div>
+                    </a>
+                    <p style="color: rgba(255,255,255,0.7);">Advocacia de excelência focada em resultados e no atendimento humanizado. Sua segurança jurídica é nossa prioridade.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Início</a></li>
+                        <li><a href="#sobre"><i class="fas fa-chevron-right"></i> Sobre</a></li>
+                        <li><a href="#areas"><i class="fas fa-chevron-right"></i> Áreas de Atuação</a></li>
+                        <li><a href="#artigos"><i class="fas fa-chevron-right"></i> Artigos</a></li>
+                        <li><a href="#contato"><i class="fas fa-chevron-right"></i> Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Áreas</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Direito Previdenciário</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Direito Trabalhista</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Direito Civil</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Direito do Consumidor</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Atendimento</h3>
+                    <p style="color: rgba(255,255,255,0.85); margin-bottom: 10px;"><i class="fas fa-map-marker-alt" style="color: var(--secondary); margin-right: 10px;"></i> Salvador e Região</p>
+                    <p style="color: rgba(255,255,255,0.85);"><i class="fas fa-phone" style="color: var(--secondary); margin-right: 10px;"></i> (71) 98130-3910</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>&copy; 2026 Dr. Lourival Oliveira Advocacia. Todos os direitos reservados.</p>
+                    <p>OAB/BA 61.507</p>
+                    <p style="margin-top: 15px;">Desenvolvido com excelência para atender suas necessidades jurídicas em Salvador e região.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5571981303910" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        const navOverlay = document.getElementById('navOverlay');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navOverlay.classList.toggle('active');
+            document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : 'auto';
+        });
+        
+        navOverlay.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            navOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // Sticky Header & Logo Shrink Effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Banner Slider
+        const slides = document.querySelectorAll('.banner-slide');
+        const dots = document.querySelectorAll('.banner-dot');
+        const prevBtn = document.getElementById('bannerPrev');
+        const nextBtn = document.getElementById('bannerNext');
+        let currentSlide = 0;
+        let slideInterval;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            if (index >= slides.length) currentSlide = 0;
+            else if (index < 0) currentSlide = slides.length - 1;
+            else currentSlide = index;
+            
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        function startSlideTimer() {
+            slideInterval = setInterval(nextSlide, 5000);
+        }
+
+        function resetSlideTimer() {
+            clearInterval(slideInterval);
+            startSlideTimer();
+        }
+
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            resetSlideTimer();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            resetSlideTimer();
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showSlide(index);
+                resetSlideTimer();
+            });
+        });
+
+        // Start slider
+        startSlideTimer();
+
+        // Calculator Tabs
+        const calcTabs = document.querySelectorAll('.calculator-tab');
+        const calculators = document.querySelectorAll('.calculator');
+
+        calcTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const targetId = tab.getAttribute('data-target');
+                
+                calcTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                
+                calculators.forEach(c => c.classList.remove('active'));
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+
+        // CORREÇÃO: Botão "Simular Benefício" no banner leva para calculadora de benefício
+        document.querySelectorAll('.simular-beneficio').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Ativa a aba de Benefício Previdenciário
+                calcTabs.forEach(t => t.classList.remove('active'));
+                const beneficioTab = document.querySelector('.calculator-tab[data-target="beneficio-calc"]');
+                if (beneficioTab) beneficioTab.classList.add('active');
+                
+                calculators.forEach(c => c.classList.remove('active'));
+                const beneficioCalc = document.getElementById('beneficio-calc');
+                if (beneficioCalc) beneficioCalc.classList.add('active');
+                
+                // Rola para a seção de calculadoras
+                document.getElementById('calculadoras').scrollIntoView({ 
+                    behavior: 'smooth' 
+                });
+            });
+        });
+
+        // Form Calculators Logic - NOVA CALCULADORA: Benefício Previdenciário
+        document.getElementById('beneficioForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const mediaSalarios = parseFloat(document.getElementById('media-salarios').value);
+            const tempoContribuicao = parseFloat(document.getElementById('tempo-contribuicao').value);
+            const tipoAposentadoria = document.getElementById('tipo-aposentadoria').value;
+            const idade = parseInt(document.getElementById('idade').value);
+            
+            if (isNaN(mediaSalarios) || isNaN(tempoContribuicao) || isNaN(idade)) {
+                alert('Por favor, preencha todos os campos corretamente.');
+                return;
+            }
+
+            let fator = 0.60; // Base 60%
+            let adicional = 0;
+            
+            // Cálculo baseado no tempo de contribuição
+            if (tempoContribuicao > 15) {
+                if (tempoContribuicao <= 20) {
+                    adicional = (tempoContribuicao - 15) * 0.02;
+                } else {
+                    adicional = 0.10 + (tempoContribuicao - 20) * 0.02;
+                }
+            }
+            
+            // Ajustes por tipo de aposentadoria
+            switch(tipoAposentadoria) {
+                case 'idade':
+                    if (idade >= 65) adicional += 0.05;
+                    break;
+                case 'tempo':
+                    if (tempoContribuicao >= 35) adicional += 0.10;
+                    break;
+                case 'mista':
+                    adicional += 0.03;
+                    break;
+                case 'especial':
+                    adicional += 0.15;
+                    break;
+            }
+            
+            let percentualFinal = fator + adicional;
+            if (percentualFinal > 1.0) percentualFinal = 1.0; // Teto de 100%
+            
+            const valorFinal = mediaSalarios * percentualFinal;
+            
+            document.getElementById('beneficioValue').textContent = `R$ ${valorFinal.toFixed(2).replace('.', ',')}`;
+            document.getElementById('percentualBeneficio').textContent = (percentualFinal * 100).toFixed(0);
+            document.getElementById('beneficioResult').style.display = 'block';
+            
+            // Scroll to result
+            document.getElementById('beneficioResult').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+
+        // Form Calculators Logic - Pensão Alimentícia
+        document.getElementById('pensaoForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const renda = parseFloat(document.getElementById('renda-alimentante').value);
+            const filhos = parseInt(document.getElementById('num-filhos').value);
+            const necessidades = parseInt(document.getElementById('necessidades').value);
+            
+            if (isNaN(renda) || isNaN(filhos) || filhos < 1) {
+                alert('Por favor, preencha todos os campos corretamente.');
+                return;
+            }
+
+            // Cálculo base: 15-30% da renda por filho
+            let percentualBase = 0.20; // 20% por filho
+            let adicional = 0;
+            
+            if (necessidades === 1) adicional += 0.05; // +5% para médio
+            if (necessidades === 2) adicional += 0.10; // +10% para alto
+            
+            let percentualFinal = (percentualBase + adicional) * filhos;
+            
+            // Teto jurisprudencial comum (30-33%)
+            if (percentualFinal > 0.33) percentualFinal = 0.33;
+            
+            const valorFinal = renda * percentualFinal;
+            
+            document.getElementById('pensaoValue').textContent = `R$ ${valorFinal.toFixed(2).replace('.', ',')}`;
+            document.getElementById('percentualRenda').textContent = (percentualFinal * 100).toFixed(0);
+            document.getElementById('pensaoResult').style.display = 'block';
+            
+            // Scroll to result
+            document.getElementById('pensaoResult').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+
+        // Form Calculators Logic - Rescisão Trabalhista
+        document.getElementById('indenizacaoForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const salario = parseFloat(document.getElementById('salario').value);
+            const tempo = parseFloat(document.getElementById('tempo-servico').value);
+            const tipo = parseInt(document.getElementById('tipo-rescisao').value);
+            
+            if (isNaN(salario) || isNaN(tempo)) {
+                alert('Por favor, preencha todos os campos corretamente.');
+                return;
+            }
+
+            let percentualMulta = 0;
+            
+            switch(tipo) {
+                case 1: // Sem justa causa
+                    percentualMulta = 0.40;
+                    break;
+                case 2: // Pedido de demissão
+                    percentualMulta = 0; // Sem multa
+                    break;
+                case 3: // Com justa causa
+                    percentualMulta = 0; // Sem multa
+                    break;
+            }
+
+            // Cálculo do saldo do FGTS estimado (8% do salário por mês)
+            const fgtsMensal = salario * 0.08;
+            const saldoFGTS = fgtsMensal * (tempo * 12);
+            let valorMulta = saldoFGTS * percentualMulta;
+            
+            document.getElementById('multaValue').textContent = `R$ ${valorMulta.toFixed(2).replace('.', ',')}`;
+            document.getElementById('multaResult').style.display = 'block';
+            
+            // Scroll to result
+            document.getElementById('multaResult').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+
+        // Form submission - Envio via WhatsApp
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nome = document.getElementById('contact-nome').value;
+            const telefone = document.getElementById('contact-telefone').value;
+            const mensagem = document.getElementById('contact-mensagem').value;
+            
+            const textoWhatsApp = `Olá, meu nome é ${nome}. Telefone: ${telefone}. Gostaria de falar sobre: ${mensagem}`;
+            const linkWhatsApp = `https://wa.me/5571981303910?text=${encodeURIComponent(textoWhatsApp)}`;
+            
+            window.open(linkWhatsApp, '_blank');
+        });
+
+        // Article Loader System
+        function loadArticle(articleId) {
+            const mainContent = document.getElementById('main-content');
+            const articleContent = document.getElementById('article-content');
+            let articleHTML = '';
+            
+            // Scroll to top
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+
+            // ARTIGOS COMPLETOS
+            if (articleId === 'artigo1') {
+                articleHTML = `
+                <section class="article-page">
+                    <div class="article-header">
+                        <div class="container">
+                            <div class="article-meta">
+                                <span class="article-tag">Previdenciário</span>
+                                <span>15 Jan 2026</span>
+                            </div>
+                            <h1>Nova Reforma da Previdência: O que Mudou para o Trabalhador</h1>
+                            <p class="article-author">
+                                <i class="fas fa-user-tie"></i> Por Dr. Lourival Oliveira
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="article-body">
+                            <p>A Reforma da Previdência, consolidada pela Emenda Constitucional nº 103/2019, trouxe mudanças profundas na forma como os brasileiros se aposentam. As novas regras, embora já estejam em vigor, continuam gerando muitas dúvidas, especialmente para aqueles que estavam próximos de se aposentar.</p>
+                            
+                            <p>Neste artigo completo, vamos detalhar as principais alterações e como elas impactam diretamente o seu planejamento de aposentadoria.</p>
+                            
+                            <h2>Principais Mudanças Estruturais</h2>
+                            
+                            <h3>1. Idade Mínima Progressiva</h3>
+                            <p>Uma das mudanças mais significativas foi a instituição da idade mínima como regra geral. Anteriormente, era possível se aposentar apenas por tempo de contribuição, independentemente da idade.</p>
+                            <p>Com a nova regra, a idade mínima passou a ser de <strong>65 anos para homens</strong> e <strong>62 anos para mulheres</strong>. No entanto, para quem já estava no mercado de trabalho, essa idade sobe progressivamente a cada ano até atingir esses patamares.</p>
+                            
+                            <h3>2. Tempo de Contribuição</h3>
+                            <p>O tempo mínimo de contribuição também sofreu alterações. Para homens que ingressaram no mercado de trabalho após a reforma, o tempo mínimo exigido passou para <strong>20 anos</strong>. Para as mulheres, manteve-se em 15 anos. Para os trabalhadores já filiados ao INSS antes da reforma, o tempo mínimo permanece em 15 anos para ambos os sexos, mas isso impacta o valor final do benefício.</p>
+                            
+                            <h3>3. Novo Cálculo do Benefício</h3>
+                            <p>Talvez a mudança mais impactante no bolso do trabalhador seja a nova forma de cálculo. Antes, o INSS considerava a média das 80% maiores contribuições, descartando as 20% menores (o que aumentava a média). Agora, a regra considera a <strong>média de 100% de todas as contribuições</strong> desde julho de 1994.</p>
+                            <p>Além disso, o valor da aposentadoria será de 60% dessa média, mais 2% para cada ano que exceder 20 anos de contribuição (para homens) ou 15 anos (para mulheres). Isso significa que, para receber 100% da média salarial, um homem precisará contribuir por 40 anos.</p>
+                            
+                            <div class="article-quote">
+                                "O planejamento previdenciário tornou-se indispensável. Com as novas regras, aposentar-se no momento errado pode significar uma perda irreversível de mais de 30% no valor do benefício vitalício."
+                            </div>
+                            
+                            <h2>Regras de Transição: Qual é a sua?</h2>
+                            <p>Para quem já estava contribuindo antes de novembro de 2019, foram criadas diversas regras de transição. Identificar a melhor para o seu caso é crucial:</p>
+                            
+                            <ul class="article-list">
+                                <li><strong>Sistema de Pontos:</strong> Soma-se a idade com o tempo de contribuição. A pontuação necessária sobe 1 ponto a cada ano.</li>
+                                <li><strong>Pedágio de 50%:</strong> Para quem faltava menos de 2 anos para se aposentar na data da reforma. É necessário trabalhar o tempo que faltava mais 50% desse tempo.</li>
+                                <li><strong>Pedágio de 100%:</strong> Exige idade mínima de 57 anos (mulher) e 60 anos (homem), pagando um pedágio de 100% do tempo que faltava. A vantagem desta regra é que o valor do benefício costuma ser maior (100% da média).</li>
+                                <li><strong>Idade Progressiva:</strong> A exigência de idade sobe 6 meses a cada ano.</li>
+                            </ul>
+
+                            <h2>Impactos para Diferentes Categorias</h2>
+                            
+                            <h3>Trabalhadores Rurais</h3>
+                            <p>Para os trabalhadores rurais, as regras de idade (60 anos homem, 55 mulher) e tempo de contribuição (15 anos) foram mantidas, reconhecendo a especificidade e a penosidade do trabalho no campo.</p>
+                            
+                            <h3>Professores</h3>
+                            <p>Professores da rede básica de ensino continuam com regras especiais, podendo se aposentar com 5 anos a menos na idade e no tempo de contribuição em relação à regra geral, mas também foram afetados pelas novas formas de cálculo.</p>
+                            
+                            <p>Em suma, a Reforma da Previdência exige que o trabalhador esteja muito mais atento e informado. Buscar a orientação de um advogado especialista em Direito Previdenciário não é apenas um custo, mas um investimento para garantir a melhor renda possível para o resto da vida.</p>
+                            
+                            <a href="#" class="back-to-articles" onclick="backToHome(); return false;">
+                                <i class="fas fa-arrow-left"></i> Voltar para Página Inicial
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                `;
+            } else if (articleId === 'artigo2') {
+                articleHTML = `
+                <section class="article-page">
+                    <div class="article-header">
+                        <div class="container">
+                            <div class="article-meta">
+                                <span class="article-tag">Trabalhista</span>
+                                <span>05 Jan 2026</span>
+                            </div>
+                            <h1>Home Office: Direitos e Obrigações do Trabalhador</h1>
+                            <p class="article-author">
+                                <i class="fas fa-user-tie"></i> Por Dr. Lourival Oliveira
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="article-body">
+                            <p>O teletrabalho, popularmente conhecido como home office, deixou de ser uma exceção para se tornar a regra em muitas empresas, especialmente após a pandemia. Com essa mudança de paradigma, surgiram também novas legislações e entendimentos jurídicos na CLT que precisam ser observados tanto por empregadores quanto por empregados.</p>
+                            
+                            <h2>O Que Diz a Lei (Lei 14.442/2022)</h2>
+                            <p>A legislação trabalhista foi atualizada para regulamentar melhor o trabalho remoto. É importante destacar que o teletrabalho deve constar expressamente no contrato de trabalho ou em aditivo contratual. Não basta um acordo verbal; as condições devem estar escritas.</p>
+                            
+                            <h3>Controle de Jornada</h3>
+                            <p>Uma das maiores dúvidas diz respeito ao controle de ponto. A nova lei estabelece que trabalhadores em regime de teletrabalho por produção ou tarefa não estão sujeitos ao controle de jornada (e, portanto, não recebem horas extras). Contudo, se a empresa exige cumprimento de horário fixo, logins em horas específicas e monitora a jornada, o direito a horas extras, adicional noturno e intervalos intrajornada permanece inalterado.</p>
+                            
+                            <h2>Equipamentos e Custos: Quem Paga a Conta?</h2>
+                            <p>O contrato deve prever expressamente quem será responsável pela aquisição, manutenção e fornecimento dos equipamentos tecnológicos (computador, monitor, internet) e da infraestrutura necessária e adequada à prestação do trabalho remoto.</p>
+                            <p>A lei permite que as empresas paguem uma "ajuda de custo" para cobrir despesas como energia elétrica e internet. É importante salientar que esta ajuda de custo tem natureza indenizatória, ou seja, não integra o salário para fins de impostos ou FGTS, o que é vantajoso para ambas as partes.</p>
+                            
+                            <div class="article-quote">
+                                "O direito à desconexão é fundamental. O fato de trabalhar em casa não significa estar disponível 24 horas por dia. Mensagens fora do horário podem configurar tempo à disposição e gerar passivo trabalhista."
+                            </div>
+                            
+                            <h2>Ergonomia e Saúde no Trabalho</h2>
+                            <p>Mesmo em casa, as normas de saúde e segurança do trabalho devem ser respeitadas. O empregador deve orientar os empregados sobre as precauções a tomar a fim de evitar doenças e acidentes de trabalho, especialmente as relacionadas à ergonomia (LER/DORT).</p>
+                            <p>Doenças desenvolvidas por má postura ou condições inadequadas de trabalho em casa podem ser equiparadas a acidentes de trabalho, gerando estabilidade e dever de indenizar.</p>
+                            
+                            <h2>Modelo Híbrido</h2>
+                            <p>O modelo híbrido também foi regulamentado. A presença do trabalhador no ambiente de trabalho para tarefas específicas, ainda que de modo habitual, não descaracteriza o regime de teletrabalho.</p>
+
+                            <p>Se você trabalha em home office e sente que seus direitos não estão sendo respeitados, ou se sua empresa não formalizou as condições de trabalho e custos, procure orientação jurídica especializada.</p>
+
+                            <a href="#" class="back-to-articles" onclick="backToHome(); return false;">
+                                <i class="fas fa-arrow-left"></i> Voltar para Página Inicial
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                `;
+            } else if (articleId === 'artigo3') {
+                articleHTML = `
+                <section class="article-page">
+                    <div class="article-header">
+                        <div class="container">
+                            <div class="article-meta">
+                                <span class="article-tag">Civil</span>
+                                <span>22 Jan 2026</span>
+                            </div>
+                            <h1>Inventário Extrajudicial: Rapidez e Economia</h1>
+                            <p class="article-author">
+                                <i class="fas fa-user-tie"></i> Por Dr. Lourival Oliveira
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="article-body">
+                            <p>Perder um ente querido é um momento extremamente delicado. Além do luto, a família precisa lidar com questões burocráticas complexas, sendo o inventário a principal delas. Felizmente, a legislação brasileira permite, desde 2007, a realização do inventário extrajudicial, feito diretamente em cartório, sem a necessidade de um longo processo judicial.</p>
+                            
+                            <h2>Vantagens do Inventário em Cartório</h2>
+                            <p>A principal vantagem é a <strong>agilidade</strong>. Enquanto um inventário judicial pode levar anos (às vezes décadas) arrastando-se nos tribunais, o extrajudicial pode ser concluído em questão de semanas ou poucos meses, dependendo apenas da reunião dos documentos e do pagamento dos impostos.</p>
+                            <p>Outra vantagem é o <strong>custo</strong>, que tende a ser menor, e a menor burocracia emocional, poupando a família de desgastes prolongados.</p>
+                            
+                            <h2>Requisitos Obrigatórios</h2>
+                            <p>Para optar por essa via mais rápida, é necessário cumprir cumulativamente os seguintes requisitos:</p>
+                            <ul class="article-list">
+                                <li><strong>Consenso:</strong> Todos os herdeiros devem estar em pleno acordo sobre a partilha dos bens. Se houver qualquer disputa, o caso deve ir para o Judiciário.</li>
+                                <li><strong>Capacidade:</strong> Todos os herdeiros devem ser maiores de idade e capazes civilmente.</li>
+                                <li><strong>Inexistência de Testamento:</strong> Em regra, não pode haver testamento deixado pelo falecido. (Nota: Em alguns estados, a jurisprudência já permite o extrajudicial mesmo com testamento, desde que haja autorização judicial prévia, mas a regra geral é a inexistência).</li>
+                                <li><strong>Advogado:</strong> A presença de um advogado é obrigatória por lei. As partes podem ter advogados distintos ou um único advogado para todos, o que geralmente reduz custos.</li>
+                            </ul>
+                            
+                            <h2>Passo a Passo Simplificado</h2>
+                            
+                            <h3>1. Escolha do Advogado e Cartório</h3>
+                            <p>O primeiro passo é contratar um advogado especializado em Direito de Sucessões. O inventário pode ser aberto em qualquer Cartório de Notas, independentemente do domicílio do falecido ou da localização dos bens.</p>
+                            
+                            <h3>2. Nomeação do Inventariante</h3>
+                            <p>A família escolhe quem será o representante do espólio (inventariante) para administrar os bens e pagar as dívidas até a conclusão da partilha.</p>
+                            
+                            <h3>3. Levantamento de Bens e Dívidas</h3>
+                            <p>Devem ser listados todos os imóveis, veículos, contas bancárias, investimentos e também as dívidas deixadas pelo falecido.</p>
+                            
+                            <h3>4. Pagamento do ITCMD</h3>
+                            <p>O Imposto de Transmissão Causa Mortis e Doação (ITCMD) deve ser declarado e pago antes da lavratura da escritura. A alíquota varia de estado para estado (na Bahia, por exemplo, varia conforme o valor dos bens).</p>
+                            
+                            <h3>5. Lavratura da Escritura</h3>
+                            <p>Após a conferência de documentos e pagamento do imposto, o tabelião lavra a Escritura Pública de Inventário e Partilha. Com esse documento em mãos, os herdeiros podem proceder aos registros nos cartórios de imóveis e transferências bancárias, sem necessidade de autorização judicial.</p>
+                            
+                            <a href="#" class="back-to-articles" onclick="backToHome(); return false;">
+                                <i class="fas fa-arrow-left"></i> Voltar para Página Inicial
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                `;
+            } else if (articleId === 'artigo4') {
+                articleHTML = `
+                <section class="article-page">
+                    <div class="article-header">
+                        <div class="container">
+                            <div class="article-meta">
+                                <span class="article-tag">Consumidor</span>
+                                <span>28 Jan 2026</span>
+                            </div>
+                            <h1>Direito de Arrependimento e Compras Online</h1>
+                            <p class="article-author">
+                                <i class="fas fa-user-tie"></i> Por Dr. Lourival Oliveira
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="article-body">
+                            <p>Com o crescimento exponencial do comércio eletrônico, as compras online tornaram-se parte do nosso cotidiano. No entanto, muitas vezes o produto que chega em casa não corresponde às expectativas geradas pela foto ou descrição no site. Para proteger o consumidor nessa situação de vulnerabilidade, o Código de Defesa do Consumidor (CDC) prevê uma ferramenta poderosa: o Direito de Arrependimento.</p>
+                            
+                            <h2>O Que é o Direito de Arrependimento (Art. 49 do CDC)</h2>
+                            <p>O artigo 49 do CDC estabelece que o consumidor pode desistir do contrato, no prazo de <strong>7 dias</strong> a contar de sua assinatura ou do ato de recebimento do produto ou serviço, sempre que a contratação ocorrer fora do estabelecimento comercial (internet, telefone, catálogo, venda a domicílio).</p>
+                            
+                            <h3>Por que existe esse prazo?</h3>
+                            <p>A lei entende que, comprando à distância, o consumidor não tem a oportunidade de manusear, testar ou avaliar adequadamente o produto. Os 7 dias servem como um período de reflexão.</p>
+                            
+                            <h2>Regras Fundamentais</h2>
+                            
+                            <h3>1. Não precisa de justificativa</h3>
+                            <p>Muitos consumidores acham que precisam provar que o produto tem defeito para devolver. Isso é um mito no caso de compras online. Dentro do prazo de 7 dias, você pode devolver o produto simplesmente porque não gostou da cor, do tamanho, ou porque se arrependeu da compra. Não é necessário apresentar defeito.</p>
+                            
+                            <h3>2. Devolução total dos valores</h3>
+                            <p>Se o consumidor exercitar o direito de arrependimento, os valores eventualmente pagos, a qualquer título, durante o prazo de reflexão, serão devolvidos, de imediato, monetariamente atualizados.</p>
+                            
+                            <h3>3. E o frete?</h3>
+                            <p>Uma dúvida comum: quem paga o frete da devolução? O entendimento consolidado é que <strong>todas as despesas correm por conta do vendedor</strong>. O consumidor não pode ter nenhum prejuízo financeiro por exercer um direito legal. Se a loja cobrar frete de devolução, essa cobrança é abusiva.</p>
+                            
+                            <h2>Informações Obrigatórias no E-commerce</h2>
+                            <p>Para garantir a segurança nas compras, o Decreto do Comércio Eletrônico (Decreto 7.962/2013) exige que os sites forneçam:</p>
+                            <ul class="article-list">
+                                <li>Identificação completa do fornecedor (Razão Social, CNPJ, Endereço físico e eletrônico).</li>
+                                <li>Descrição clara das características essenciais do produto ou serviço.</li>
+                                <li>Informações claras sobre preço, formas de pagamento e prazos de entrega.</li>
+                            </ul>
+                            
+                            <div class="article-quote">
+                                "O direito ao arrependimento é inegociável. Cláusulas contratuais que tentam limitar esse direito ou impor multas pela desistência em compras online são nulas de pleno direito."
+                            </div>
+                            
+                            <h2>Produtos Personalizados e Conteúdo Digital</h2>
+                            <p>Existem discussões jurídicas sobre produtos feitos sob encomenda/personalizados e produtos de consumo imediato (como delivery de comida). Nesses casos, o bom senso e a jurisprudência têm ponderado a aplicação irrestrita do artigo 49 para evitar má-fé ou enriquecimento ilícito, mas a regra geral de proteção ao vulnerável prevalece na maioria dos casos de produtos padronizados.</p>
+                            
+                            <a href="#" class="back-to-articles" onclick="backToHome(); return false;">
+                                <i class="fas fa-arrow-left"></i> Voltar para Página Inicial
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                `;
+            }
+            
+            // Esconder conteúdo principal
+            mainContent.style.display = 'none';
+            
+            // Mostrar conteúdo do artigo
+            articleContent.innerHTML = articleHTML;
+            articleContent.style.display = 'block';
+        }
+        
+        function backToHome() {
+            const mainContent = document.getElementById('main-content');
+            const articleContent = document.getElementById('article-content');
+            
+            // Mostrar conteúdo principal
+            mainContent.style.display = 'block';
+            
+            // Esconder conteúdo do artigo
+            articleContent.style.display = 'none';
+            articleContent.innerHTML = '';
+            
+            // Rolar para o topo (opcional, ou manter posição)
+             window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        
+        // Verificar se há parâmetro de artigo na URL ao carregar
+        window.addEventListener('load', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const articleParam = urlParams.get('article');
+            
+            if (articleParam) {
+                loadArticle(articleParam);
+            }
+        });
+
+        // Efeito de Fade In ao rolar
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            el.style.opacity = '0';
+            el.style.animationPlayState = 'paused';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
